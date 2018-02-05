@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		BFFC489120291CB90052ECF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC489020291CB90052ECF7 /* AppDelegate.swift */; };
-		BFFC489320291CB90052ECF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC489220291CB90052ECF7 /* ViewController.swift */; };
+		BFFC489320291CB90052ECF7 /* ToDoListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC489220291CB90052ECF7 /* ToDoListViewController.swift */; };
 		BFFC489620291CB90052ECF7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFC489420291CB90052ECF7 /* Main.storyboard */; };
 		BFFC489820291CB90052ECF7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFFC489720291CB90052ECF7 /* Assets.xcassets */; };
 		BFFC489B20291CB90052ECF7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFFC489920291CB90052ECF7 /* LaunchScreen.storyboard */; };
+		BFFC48A620291F950052ECF7 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFFC48A520291F950052ECF7 /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BFFC488D20291CB90052ECF7 /* Notes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFFC489020291CB90052ECF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BFFC489220291CB90052ECF7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BFFC489220291CB90052ECF7 /* ToDoListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListViewController.swift; sourceTree = "<group>"; };
 		BFFC489520291CB90052ECF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFFC489720291CB90052ECF7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFFC489A20291CB90052ECF7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFFC489C20291CB90052ECF7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFFC48A520291F950052ECF7 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +57,46 @@
 			isa = PBXGroup;
 			children = (
 				BFFC489020291CB90052ECF7 /* AppDelegate.swift */,
-				BFFC489220291CB90052ECF7 /* ViewController.swift */,
-				BFFC489420291CB90052ECF7 /* Main.storyboard */,
-				BFFC489720291CB90052ECF7 /* Assets.xcassets */,
-				BFFC489920291CB90052ECF7 /* LaunchScreen.storyboard */,
+				BFFC48A720291F9D0052ECF7 /* Data Model */,
+				BFFC48A220291DFB0052ECF7 /* View Controllers */,
+				BFFC48A420291E200052ECF7 /* Views */,
+				BFFC48A320291E0D0052ECF7 /* Supporting Docs */,
 				BFFC489C20291CB90052ECF7 /* Info.plist */,
 			);
 			path = Notes;
+			sourceTree = "<group>";
+		};
+		BFFC48A220291DFB0052ECF7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC489220291CB90052ECF7 /* ToDoListViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		BFFC48A320291E0D0052ECF7 /* Supporting Docs */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC489720291CB90052ECF7 /* Assets.xcassets */,
+				BFFC489920291CB90052ECF7 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Docs";
+			sourceTree = "<group>";
+		};
+		BFFC48A420291E200052ECF7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC489420291CB90052ECF7 /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFFC48A720291F9D0052ECF7 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				BFFC48A520291F950052ECF7 /* Item.swift */,
+			);
+			path = "Data Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +171,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFFC489320291CB90052ECF7 /* ViewController.swift in Sources */,
+				BFFC489320291CB90052ECF7 /* ToDoListViewController.swift in Sources */,
+				BFFC48A620291F950052ECF7 /* Item.swift in Sources */,
 				BFFC489120291CB90052ECF7 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
