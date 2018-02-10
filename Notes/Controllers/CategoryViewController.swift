@@ -22,6 +22,7 @@ class CategoryViewController: SwipeTableViewController {
         
         tableView.separatorStyle = .none
         
+        
     }
 
     //Mark: - TableView Datasource Methods
@@ -39,10 +40,13 @@ class CategoryViewController: SwipeTableViewController {
         
         if let category = categories?[indexPath.row] {
    
-            cell.textLabel?.text = category.name ?? "No Categories Added Yet"
+            cell.textLabel?.text = category.name
             
-            cell.backgroundColor = UIColor(hexString: category.colour ?? "1D9BF6")
+            guard let categorgyColour = UIColor(hexString: category.colour) else { fatalError() }
             
+            cell.backgroundColor = UIColor(hexString: category.colour )
+            
+            cell.textLabel?.textColor = ContrastColorOf(categorgyColour, returnFlat: true)
         }
         
         return cell
